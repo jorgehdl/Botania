@@ -46,4 +46,8 @@ public class ItemBlockMod extends ItemBlock implements IPickupAchievement, ICraf
 		return field_150939_a instanceof IPickupAchievement ? ((IPickupAchievement) field_150939_a).getAchievementOnPickup(stack, player, item) : null;
 	}
 
+	public String getNombre(String hola){
+		return hola;
+	}
+
 }
