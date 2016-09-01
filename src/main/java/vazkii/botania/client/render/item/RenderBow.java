@@ -24,6 +24,8 @@ import cpw.mods.fml.relauncher.ReflectionHelper;
 
 public class RenderBow implements IItemRenderer {
 
+	private int hola = 0;
+
 	@Override
 	public boolean handleRenderType(ItemStack item, ItemRenderType type) {
 		return type != ItemRenderType.INVENTORY;
