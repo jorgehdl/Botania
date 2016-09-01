@@ -19,6 +19,8 @@ import vazkii.botania.common.lib.LibItemNames;
 
 public class ItemSlingshot extends ItemMod {
 
+	private int far=45;
+
 	public ItemSlingshot() {
 		setMaxStackSize(1);
 		setUnlocalizedName(LibItemNames.SLINGSHOT);
@@ -40,9 +42,9 @@ public class ItemSlingshot extends ItemMod {
 
 			if(!par2World.isRemote) {
 				EntityVineBall ball = new EntityVineBall(par3EntityPlayer, false);
-				ball.motionX *= 1.6;
-				ball.motionY *= 1.6;
-				ball.motionZ *= 1.6;
+				ball.motionX *= far;
+				ball.motionY *= far;
+				ball.motionZ *= far;
 				par2World.spawnEntityInWorld(ball);
 			}
 		}
