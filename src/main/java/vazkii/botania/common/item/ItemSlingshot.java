@@ -19,7 +19,7 @@ import vazkii.botania.common.lib.LibItemNames;
 
 public class ItemSlingshot extends ItemMod {
 
-	private int far=45;
+	private int far=450;
 
 	public ItemSlingshot() {
 		setMaxStackSize(1);
